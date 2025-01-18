@@ -6,7 +6,8 @@ function Navbar(){
 
     return(
         <div className={styles.navbar}>
-            <ul>
+            <h1>Tabela FIPE</h1>
+            <ul className={styles.list_nav}>
                 <li>
                     <Link to="/">Busca</Link>
                 </li>
