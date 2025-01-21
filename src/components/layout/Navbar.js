@@ -9,10 +9,7 @@ function Navbar(){
             <h1>Tabela FIPE</h1>
             <ul className={styles.list_nav}>
                 <li>
-                    <Link to="/">Busca</Link>
-                </li>
-                <li>
-                    <Link to="/carros">Carros</Link>
+                    <Link to="/">Carros</Link>
                 </li>
                 <li>
                     <Link to="/motos">Motos</Link>

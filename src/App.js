@@ -6,7 +6,6 @@ import Navbar from './components/layout/Navbar';
 import Container from './components/layout/Container'
 import Footer from './components/layout/Footer';
 
-import Busca from './components/pages/Busca';
 import Carros from './components/pages/Carros';
 import Motos from './components/pages/Motos';
 import Caminhoes from './components/pages/Caminhoes'
@@ -18,8 +17,7 @@ function App() {
           <Navbar/>
           <Container>
             <Routes>
-              <Route exact path='/' element={<Busca/>}/>
-              <Route path='/carros' element={<Carros/>}/>
+              <Route exact path='/' element={<Carros/>}/>
               <Route path='/motos' element={<Motos/>}/>
               <Route path='/caminhoes' element={<Caminhoes/>}/>
             </Routes>
