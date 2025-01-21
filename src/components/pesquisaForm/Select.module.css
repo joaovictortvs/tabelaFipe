@@ -8,4 +8,5 @@ select{
     font-size: 1em;
     padding: 10px 20px;
     margin-right: 5px;
+    max-width: 204px;
 }

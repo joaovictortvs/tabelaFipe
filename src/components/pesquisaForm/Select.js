@@ -5,7 +5,7 @@ function Select({options, text, marcaSelecionada, disabled}){
     return(
         <>
             <label htmlFor={text}>{text}</label>
-            <select id={text} key={text} disabled={disabled} onChange={marcaSelecionada}>
+            <select id={text} key={text} disabled={disabled} onChange={(e)=>marcaSelecionada(e.target.value)}>
             <option value="">Escolha uma opção</option>
             {options.map((option)=>(
                 <option key={option.codigo} value={option.codigo}>{option.nome}</option>
