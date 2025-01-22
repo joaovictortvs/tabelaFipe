@@ -107,7 +107,6 @@ function Carros(){
                  
                 <div className={styles.selectContainer}>
                     <Select options={anos} text="Ano" disabled={modeloClicado ? false : true} selecionado={anoChecked}/>
-                    {/* <Select options={options} text="Modelos"/> */}
                 </div>
                 {carroConsultado && (
                     <div> 
