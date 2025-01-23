@@ -100,6 +100,7 @@ function Carros(){
     return(
          <div className={styles.busca}>
             <div className={styles.containerBusca}>
+                <h1>Qual <strong>Carro</strong> você está interessado em comprar ou vender?</h1>
                 <div className={styles.selectContainer}>
                     <Select options={options}  text="Marca" selecionado={marcaChecked}/>
                     <Select options={modelos} text="Modelos" disabled={marcaClicada ? false : true} selecionado={modeloChecked}/>

@@ -18,6 +18,12 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
 }
 
+.containerBusca h1{
+    margin: 10px 0px;
+    color: #222;
+    font-size: 1.2em;
+}
+
 .selectContainer{
     display: flex;
     width: 90%;
@@ -25,4 +31,8 @@
     padding: 10px;
     justify-content: center;
     align-items: center;
+}
+
+strong{
+    color: #0279F0;
 }
