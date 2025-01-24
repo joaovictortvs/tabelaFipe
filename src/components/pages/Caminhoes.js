@@ -104,22 +104,25 @@ function Caminhoes(){
             <div className={styles.selectContainer}>
                 <Select options={options}  text="Marca" selecionado={marcaChecked}/>
                 <Select options={modelos} text="Modelos" disabled={marcaClicada ? false : true} selecionado={modeloChecked}/>
-            </div>
-             
-            <div className={styles.selectContainer}>
                 <Select options={anos} text="Ano" disabled={modeloClicado ? false : true} selecionado={anoChecked}/>
             </div>
             {caminhaoConsultado && (
-                <div> 
-                    <p>Marca: {marcaVeiculo}</p>
-                    <p>Modelo: {modeloVeiculo}</p>
-                    <p>Valor: {valorCaminhao}</p>
-                    <p>Ano-modelo: {anoModelo}</p>
-                    <p>Tipo combustível: {combustivel}</p>
-                    <p>Mês-referência: {mesRef}</p>
+                <div className={styles.veiculoDados}> 
+                        <div className={styles.dados}> 
+                            <p>Marca: <br/>{marcaVeiculo}</p>
+                            <p>Modelo: <br/>{modeloVeiculo}</p>
+                        </div>
+                        <div className={styles.dados}>
+                            <p className={styles.valor}>Valor: <br/>{valorCaminhao}</p>
+                            <p>Ano-modelo: <br/> {anoModelo}</p>
+                        </div>
+                        <div className={styles.dados}>
+                            <p>Tipo combustível: <br/> {combustivel}</p>
+                            <p>Mês-referência: <br/>{mesRef}</p>
+                        </div>
                 </div>
             )}
-            <Button text="Consultar Caminhao" consultar={consultarCaminhao}/>
+            <Button text="Consultar Caminhão" consultar={consultarCaminhao}/>
         </div>
        
     </div>

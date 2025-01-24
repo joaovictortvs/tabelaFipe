@@ -1,13 +1,15 @@
 label{
-    font-size: 1.1em;
-    margin-right: 18px;
+    font-size: 1.2em;
+    font-family: arial;
     width: 10%;
+    align-self: flex-start;
 }
 
 select{
     border: none;
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 10px 20px;
-    margin-right: 5px;
+    margin-bottom: 5px;
     width: 100%;
+    opacity: 85%;
 }

@@ -16,23 +16,62 @@
     height: auto;
     border-radius: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.433);
+    margin: 20px 0px;
 }
 
 .containerBusca h1{
     margin: 10px 0px;
     color: #222;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .selectContainer{
     display: flex;
+    flex-direction: column;
+    height: auto;
     width: 90%;
-    margin-top: 10px;
     padding: 10px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.veiculoDados{
+    display: flex;
+    background-color: #2F3A46;
+    padding: 15px 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.664);
+    width: 87%;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+    color: rgb(238, 238, 238);
+    max-width: 33%;
+    align-items: center;
+    text-align: center;
+    padding: 17px;
+    margin: 0 5px;
+}
+
+.dados p{
+    margin-bottom: 5px;
+}
+
+.valor {
+    color: rgb(7, 204, 7);
 }
 
 strong{
     color: #0279F0;
+}
+
+@media screen and (max-width: 605px){
+    .containerBusca{
+        width: 400px;
+    }
 }

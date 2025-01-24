@@ -42,3 +42,19 @@
 .list_nav li a:hover{
     border-bottom: 2px solid black;
 }
+
+@media screen and (max-width: 605px){
+    
+    .navbar h1{
+        font-size: 2em;
+    }
+
+    .list_nav{
+        justify-content: center;
+    }
+
+    .list_nav li a{
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+}
